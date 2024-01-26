@@ -1,7 +1,8 @@
-export default function Page() {
+export default function Page({ params }: { params: { productId: string } }) {
     return (
         <div>
-            <h1>Product 1 Detail</h1>
+            <h1>Product {params.productId} Detail</h1>
         </div>
     );
 }
+
